@@ -16,6 +16,6 @@ public class Main {
         Pigeon pigeon = new Pigeon();
         pigeon.setName("Sizy");
         pigeon.talk("Hello! I'm a pigeon, my name is Sizy");
-        pigeon.markTheCar("E447HA716");
+        pigeon.markTheCar("A001AA716");
     }
 }
