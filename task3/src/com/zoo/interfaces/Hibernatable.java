@@ -1,4 +1,4 @@
-package com.zoo.animal;
+package com.zoo.interfaces;
 
 public interface Hibernatable {
     void Hibernate(int weeks);

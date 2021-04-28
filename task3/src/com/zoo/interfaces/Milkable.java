@@ -1,4 +1,4 @@
-package com.zoo.animal;
+package com.zoo.interfaces;
 
 public interface Milkable {
     void giveMilk(double liters);

@@ -1,6 +1,15 @@
 package com.zoo.animal;
 
+import com.zoo.interfaces.Grazeable;
+import com.zoo.interfaces.Milkable;
+
 public class Cow extends Animal implements Milkable, Grazeable {
+    public Cow() {
+    }
+
+    public Cow(String name) {
+        this.name = name;
+    }
     @Override
     public void setName(String name) {
         this.name = name;
@@ -23,7 +32,7 @@ public class Cow extends Animal implements Milkable, Grazeable {
 
     @Override
     public void giveMilk(double liters) {
-        System.out.println(name + " gave " + liters + " of milk");
+        System.out.println(name + " gave " + liters + " liters of milk");
     }
 
     @Override

@@ -9,4 +9,8 @@ public abstract class Animal {
     public void sleep() {
         sleep(8);
     }
+
+    public String getName() {
+        return name;
+    }
 }

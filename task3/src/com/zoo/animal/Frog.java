@@ -1,6 +1,14 @@
 package com.zoo.animal;
 
+import com.zoo.interfaces.Hibernatable;
+import com.zoo.interfaces.Swimable;
+
 public class Frog extends Animal implements Swimable, Hibernatable {
+    public Frog() {
+    }
+    public Frog(String name) {
+        this.name = name;
+    }
     @Override
     public void setName(String name) {
         this.name = name;

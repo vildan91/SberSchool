@@ -1,6 +1,14 @@
 package com.zoo.animal;
 
+import com.zoo.interfaces.FlyHuntable;
+import com.zoo.interfaces.HighFlyable;
+
 public class Eagle extends Animal implements FlyHuntable, HighFlyable {
+    public Eagle() {
+    }
+    public Eagle(String name) {
+        this.name = name;
+    }
     @Override
     public void setName(String name) {
         this.name = name;

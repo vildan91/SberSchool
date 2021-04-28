@@ -1,8 +1,16 @@
 package com.zoo.animal;
 
-import java.util.Locale;
+import com.zoo.interfaces.Eggable;
+import com.zoo.interfaces.LowFlyable;
 
 public class Chicken extends Animal implements Eggable, LowFlyable {
+    public Chicken() {
+    }
+
+    public Chicken(String name) {
+        this.name = name;
+    }
+
     @Override
     public void setName(String name) {
         this.name = name;

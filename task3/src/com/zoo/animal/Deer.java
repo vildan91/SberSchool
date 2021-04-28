@@ -1,6 +1,16 @@
 package com.zoo.animal;
 
+import com.zoo.exception.HarnessException;
+import com.zoo.interfaces.Goreable;
+import com.zoo.interfaces.Harnessable;
+
 public class Deer extends Animal implements Goreable, Harnessable {
+    public Deer() {
+    }
+    public Deer(String name) {
+        this.name = name;
+    }
+
     @Override
     public void setName(String name) {
         this.name = name;
@@ -27,7 +37,10 @@ public class Deer extends Animal implements Goreable, Harnessable {
     }
 
     @Override
-    public void makeHarness(int deerNumber) {
+    public void makeHarness (int deerNumber) throws HarnessException {
+        if (deerNumber <= 0) {
+            throw new HarnessException("Wrong deer number");
+        }
         System.out.println(name + " is in harness with " + deerNumber + " deers");
     }
 }
